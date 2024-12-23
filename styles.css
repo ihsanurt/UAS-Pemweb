@@ -1,0 +1,206 @@
+/* Styling untuk navigasi sidebar dengan efek glassmorphism */
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+
+/* Menghapus bullet points dari daftar navigasi */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Menambahkan margin antara item navigasi */
+nav ul li {
+    margin: 20px 0;
+}
+
+/* Styling untuk link navigasi */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+
+/* Efek hover untuk link navigasi */
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #4359b3;
+}
+
+/* Styling umum untuk semua elemen */
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk elemen body */
+body {
+    font-family: Arial, sans-serif;
+    background: url(Assets/pexels-markusspiske-110873.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Styling untuk judul halaman */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Styling untuk container utama */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+/* Styling untuk judul kedua */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Styling untuk label form */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(255, 250, 254);
+}
+
+/* Styling untuk input teks, email, dan password dalam form */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"], 
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid;
+    border-color: rgb(235, 223, 223);
+    border-radius: 4px;
+    background: transparent;
+}
+
+/* Styling untuk textarea dalam form */
+form input[type="textarea"] {
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 30px;
+    border: 2px solid;
+    border-color: rgb(235, 223, 223);
+    border-radius: 4px;
+    background: transparent;
+}
+
+/* Styling untuk tombol submit dalam form */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4359b3;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Styling untuk tabel dalam profile.php */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    color: white;
+}
+
+th {
+    background-color: #4359b3;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Styling untuk daftar pelanggan */
+#customer-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#customer-list li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#customer-list li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#customer-list button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#customer-list button:hover {
+    background-color: #ff1a1a;
+}
+
+/* Styling untuk tombol dalam daftar todo */
+.todo-buttons input[type="submit"] {
+    margin-right: 10px;
+}
+
+/* Styling khusus untuk container login dan register */
+.login-container .container,
+.register-container .container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
